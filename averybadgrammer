@@ -1,0 +1,7 @@
+<stmt> -> <if> <expr> <then> <stmt list> <endif>;
+<stmt> -> <if> <expr> <then> <stmt list> <else> <stmt list> <endif>;
+<if> -> IfSym
+<then> -> ThenSym
+<else> -> ElseSym
+<endif> -> EndIfSym
+

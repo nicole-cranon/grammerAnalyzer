@@ -1,0 +1,28 @@
+<program> -> <beginsym> <stmt list> <endsym>
+<stmt list> -> <statement> | <statement> <stmt list>
+<statement> -> <ident> <assign op> <expression> <semi colon>
+<statement> -> <read sym> <l paren> <id list> <r paren> <semi colon>
+<statement> -> <write sym> <l paren> <expr list> <r paren> <semi colon>
+<id list> -> <ident> | <ident> <comma> <id list>
+<expr list> -> <expression> | <expression> <comma> <expr list>
+<expression> -> <primary> | <primary> <add op> <expression>
+<primary> -> <l paren> <expression> <r paren>
+<add op> -> <plus op>
+<add op> -> <minus op>
+<system goal> -> <program> <eof sym>
+<primary> -> <ident>
+<primary> -> <int lit>
+<assign op> -> AssignOp
+<plus op> -> PlusOp
+<minus op> -> Minus Op
+<begin sym> -> BeginSym
+<end sym> -> EndSym
+<ident> -> Id
+<int lit> -> IntLiteral
+<l paren> -> LParen
+<r paren> -> RParen
+<comma> -> Comma
+<semi colon> -> SemiColon
+<read sym> -> ReadSym
+<write sym> -> WriteSym
+<eof sym> -> EofSym
